@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(LEMONMILK-Light.otf);
+}
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: lemonmilk;
+    color: #28a37e;
+    background-color: rgb(65, 63, 63);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#calculadora {
+    max-width: 360px;
+    background-color: #0a271e56;
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 30px #28a37e;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.videofundo {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Não funcionou */
+}
+
+#display {
+    font-size: 22px;
+    text-align: right;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    background-color: #28a37ea1;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: calc(25% - 12px);
+    height: 35px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 11%;
+    background-color: #28a37e;
+    color: #ffffff;
+    float: left;
+}
+
+.operador {
+    background-color: #0093b8;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #0093b8;
+    box-shadow: 0 0 2px white;
+    transform: scale(0.9);
+}
+
+/* modo escuro */
+
+.dark-mode button{
+    background-color: #333;
+    color: #f50000;
+}
+
